@@ -21,193 +21,126 @@
   </head>
 
   <body>
-    <nav class="navbar bg-body-tertiary">
+    <nav class="navbar navbar-expand-md bg-body-tertiary">
       <div class="container-fluid">
-        <a class="navbar-brand" href="#">Adorable Dogs - The Store</a>
-        <div class="d-flex flex-row gap-3 justify-content-between">
-          <div class="input-group">
-            <span class="input-group-text" id="basic-addon1">
-              <i class="fa-solid fa-magnifying-glass"></i>
-            </span>
-            <input
-              type="text"
-              class="form-control"
-              placeholder="Find An Adorable Dog"
-              aria-label="Search"
-              aria-describedby="basic-addon1"
-            />
+        <span class="navbar-brand mb-0 h1"
+          ><i class="fa-brands fa-instagram"></i> Instabran
+        </span>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarCollapse"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse gap-2" id="navbarCollapse">
+          <button type="button" class="btn btn-success ms-auto">Success</button>
+          <div class="btn-group">
+            <button type="button" class="btn btn-secondary">Action</button>
+            <button
+              type="button"
+              class="btn btn-secondary dropdown-toggle dropdown-toggle-split"
+              data-bs-toggle="dropdown"
+              aria-expanded="false"
+            >
+              <span class="visually-hidden">Toggle Dropdown</span>
+            </button>
+            <ul class="dropdown-menu dropdown-menu-end">
+              <li><a class="dropdown-item" href="#">Action</a></li>
+              <li><a class="dropdown-item" href="#">Another action</a></li>
+              <li><a class="dropdown-item" href="#">Something else here</a></li>
+              <li><hr class="dropdown-divider" /></li>
+              <li><a class="dropdown-item" href="#">Separated link</a></li>
+            </ul>
           </div>
         </div>
       </div>
     </nav>
     <div class="container">
-      <div class="row flex-lg-row-reverse align-items-center g-5 py-5">
-        <div class="col-10 col-sm-8 col-lg-6">
-          <img
-            src="https://placedog.net/700/500"
-            class="d-block mx-lg-auto img-fluid"
-            alt="Bootstrap Themes"
-            width="700"
-            height="500"
-            loading="lazy"
-          />
-        </div>
-        <div class="col-lg-6">
-          <h1 class="display-5 fw-bold text-body-emphasis lh-1 mb-3">
-            Responsive left-aligned hero with image
-          </h1>
-          <p class="lead">
-            Quickly design and customize responsive mobile-first sites with
-            Bootstrap, the world&CloseCurlyQuote;s most popular front-end open
-            source toolkit, featuring Sass variables and mixins, responsive grid
-            system, extensive prebuilt components, and powerful JavaScript
-            plugins.
-          </p>
-          <div class="d-grid gap-2 d-md-flex justify-content-md-start">
-            <button type="button" class="btn btn-primary btn-lg px-4 me-md-2">
-              Primary
-            </button>
-            <button type="button" class="btn btn-outline-secondary btn-lg px-4">
-              Default
-            </button>
-          </div>
-        </div>
-      </div>
-      <div class="row d-flex align-items-center g-5 py-5">
-        <ul class="nav nav-tabs" id="myTab" role="tablist">
-          <li class="nav-item" role="presentation">
-            <button
-              class="nav-link active"
-              id="home-tab"
-              data-bs-toggle="tab"
-              data-bs-target="#home-tab-pane"
-              type="button"
-              role="tab"
-              aria-controls="home-tab-pane"
-              aria-selected="true"
-            >
-              Log In
-            </button>
-          </li>
-          <li class="nav-item" role="presentation">
-            <button
-              class="nav-link"
-              id="profile-tab"
-              data-bs-toggle="tab"
-              data-bs-target="#profile-tab-pane"
-              type="button"
-              role="tab"
-              aria-controls="profile-tab-pane"
-              aria-selected="false"
-            >
-              Sign Up
-            </button>
-          </li>
-        </ul>
-        <div class="tab-content" id="myTabContent">
-          <div
-            class="tab-pane fade show active"
-            id="home-tab-pane"
-            role="tabpanel"
-            aria-labelledby="home-tab"
-            tabindex="0"
+      <ul class="nav nav-tabs" id="myTab" role="tablist">
+        <li class="nav-item" role="presentation">
+          <button
+            class="nav-link active"
+            id="home-tab"
+            data-bs-toggle="tab"
+            data-bs-target="#home-tab-pane"
+            type="button"
+            role="tab"
+            aria-controls="home-tab-pane"
+            aria-selected="true"
           >
-            <form class="row g-3 needs-validation">
-              <div class="alert alert-danger">Test!</div>
-              <div class="col-md-4">
-                <label for="validationCustom01" class="form-label"
-                  >First name</label
-                >
-                <input
-                  type="text"
-                  class="form-control"
-                  id="validationCustom01"
-                  value="Mark"
-                  required
-                />
-                <div class="valid-feedback">Looks good!</div>
-              </div>
-              <div class="col-md-4">
-                <label for="validationCustom02" class="form-label"
-                  >Last name</label
-                >
-                <input
-                  type="text"
-                  class="form-control"
-                  id="validationCustom02"
-                  value="Otto"
-                  required
-                />
-                <div class="valid-feedback">Looks good!</div>
-              </div>
-              <div class="col-md-4">
-                <label for="validationCustomUsername" class="form-label"
-                  >Username</label
-                >
-                <div class="input-group has-validation">
-                  <span class="input-group-text" id="inputGroupPrepend">@</span>
-                  <input
-                    type="text"
-                    class="form-control"
-                    id="validationCustomUsername"
-                    aria-describedby="inputGroupPrepend"
-                    required
-                  />
-                  <div class="invalid-feedback">Please choose a username.</div>
-                </div>
-              </div>
-              <div class="col-md-6">
-                <label for="validationCustom03" class="form-label">City</label>
-                <input
-                  type="text"
-                  class="form-control"
-                  id="validationCustom03"
-                  required
-                />
-                <div class="invalid-feedback">Please provide a valid city.</div>
-              </div>
-              <div class="col-md-3">
-                <label for="validationCustom04" class="form-label">State</label>
-                <select class="form-select" id="validationCustom04" required>
-                  <option selected disabled value="">Choose...</option>
-                  <option>...</option>
-                </select>
-                <div class="invalid-feedback">Please select a valid state.</div>
-              </div>
-              <div class="col-md-3">
-                <label for="validationCustom05" class="form-label">Zip</label>
-                <input
-                  type="text"
-                  class="form-control"
-                  id="validationCustom05"
-                  required
-                />
-                <div class="invalid-feedback">Please provide a valid zip.</div>
-              </div>
-              <div class="col-12">
-                <div class="form-check">
-                  <input
-                    class="form-check-input"
-                    type="checkbox"
-                    value=""
-                    id="invalidCheck"
-                    required
-                  />
-                  <label class="form-check-label" for="invalidCheck">
-                    Agree to terms and conditions
-                  </label>
-                  <div class="invalid-feedback">
-                    You must agree before submitting.
-                  </div>
-                </div>
-              </div>
-              <div class="col-12">
-                <button class="btn btn-primary" type="submit">
-                  Submit form
-                </button>
-              </div>
-            </form>
+            <i class="fa-solid fa-table-cells"></i>
+          </button>
+        </li>
+        <li class="nav-item" role="presentation">
+          <button
+            class="nav-link"
+            id="profile-tab"
+            data-bs-toggle="tab"
+            data-bs-target="#profile-tab-pane"
+            type="button"
+            role="tab"
+            aria-controls="profile-tab-pane"
+            aria-selected="false"
+          >
+            <i class="fa-solid fa-table-cells"></i>
+          </button>
+        </li>
+      </ul>
+      <div class="tab-content mt-2" id="myTabContent">
+        <div
+          class="tab-pane fade show active"
+          id="home-tab-pane"
+          role="tabpanel"
+          aria-labelledby="home-tab"
+          tabindex="0"
+        >
+          <div class="card mb-3">
+            <div class="card-header">
+              <h2>Look at this adorable dog!</h2>
+              <span> Apr. 8th 2024 </span>
+            </div>
+            <img src="https://placedog.net/500/400" alt="" />
+            <div class="card-body">
+              <h5 class="card-title">Special title treatment</h5>
+              <p class="card-text">
+                With supporting text below as a natural lead-in to additional
+                content.
+              </p>
+              <a href="#" class="btn btn-primary">Go somewhere</a>
+            </div>
           </div>
+        </div>
+        <div
+          class="tab-pane fade"
+          id="profile-tab-pane"
+          role="tabpanel"
+          aria-labelledby="profile-tab"
+          tabindex="0"
+        >
+          <section class="insta-post">
+            <div class="insta-post--title">
+              <h2>Look at this adorable dog!</h2>
+              <span class="insta-post--date"> Apr. 8th 2024 </span>
+            </div>
+            <img
+              src="https://placedog.net/500/400"
+              alt=""
+              class="insta-post--image"
+            />
+            <div class="insta-post--body">
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                Facilis, ullam sed iusto vero dolorum quas quo corporis ipsum
+                incidunt, inventore esse, veritatis repellendus dignissimos
+                fuga! Pariatur quis totam autem tempora!
+              </p>
+            </div>
+          </section>
         </div>
       </div>
     </div>
